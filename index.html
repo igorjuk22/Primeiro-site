@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site X Dente 67</title>
 
-    <style>
-        body{
-            background-color: black;
-            color: white;
-        }
-    </style>
-
 </head>
 <body>
     
@@ -31,9 +24,20 @@
 
 <div>
     <h3>Sobre mim</h3>
-    <p>Eu me chamo Igor, estudo no Colégio CCM Prof. Leni Marlene Jacob e adoro jogar!</p>
-    <img src="image.png" alt="" width="400">
+    <p>Eu me chamo Igor, estudo no Colégio CCM Prof. Leni Marlene Jacob!</p>
+    <img src="image.png" alt="" width="200">
+    <button>👍<span>0</span></button>
 </div>
+
+<script>
+    const botao = document.querySelector("button")
+    botao.addEventListener('click', curtir)
+
+    function curtir(){
+        let curtidas = document.querySelector("span")
+        curtidas.textContent++;
+    }
+</script>
 
 </body>
 </html>
