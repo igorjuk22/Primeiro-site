@@ -18,7 +18,13 @@ function aumentarFonte(){
     document.body.style.fontSize = fonte + "px";
 }
 
-// Botão do Contraste
-const bcontraste = document.
+// Botão Contraste
 
-// FUNÇÃO DO CONTRASTE
+ const contraste = document.getElementById("contraste")
+    contraste.addEventListener("click", MudarContraste)
+
+// Função contraste
+    
+function MudarContraste(){
+     document.body.style.color = 'yellow';
+   }
