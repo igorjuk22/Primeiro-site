@@ -3,40 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site X Dente 67</title>
+    <title>Meu Primeiro Site</title>
+
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    
-<h1>Esse é o meu primeiro site</h1>
-<p>Nesse Site vou testar html, css e javascript</p>
-<hr>
-<h3>Tecnologias:</h3>
+   
+    <h1>Esse é meu primeiro site</h1>
+    <p>Nesse site vou testar html, css e javascript</p>
+    <hr>
+    <h3>Tecnologias:</h3>
 
-<ul>
-    <li> <strong>HTML:</strong> HyperText Markup Language - Linguagem de Marcação de HiperTexto </li>
+    <ul>
+        <li id="html"> <strong>HTML:</strong> HyperText Markup Language - Linguagem de Marcação de HiperTexto</li>
 
-    <li> <strong>CSS:</strong> Cascading Style Sheet: Folha de Estilo em Cascata </li>
+        <li id="css"> <strong>CSS:</strong> Cascading Style Sheet: Folha de Estilo em Cascata </li>
 
-    <li> <strong>JavaScript:</strong> Linguagem de Programação</li>
-</ul>
+        <li id="js"> <strong>JavaScript:</strong> Linguagem de Programação</li>
+    </ul>
 
 
-<div>
-    <h3>Sobre mim</h3>
-    <p>Eu me chamo Igor, estudo no Colégio CCM Prof. Leni Marlene Jacob!</p>
-    <img src="image.png" alt="" width="200">
-    <button>👍<span>0</span></button>
-</div>
+    <div>
+        <h3>Sobre mim</h3>
+        <p>Me chamo Igor e estudo no colégio Leni Marlene Jacob!</p>
+        <img src="image.png" alt="" width="200">
+        <button>🧠<span>0</span></button>
+    </div>
 
 <script>
     const botao = document.querySelector("button")
-    botao.addEventListener('click', curtir)
+botao.addEventListener('click', curtir)
 
-    function curtir(){
-        let curtidas = document.querySelector("span")
-        curtidas.textContent++;
-    }
+function curtir() {
+    let curtidas = document.querySelector("span")
+    curtidas.textContent++;
+}
 </script>
 
 </body>
